@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+nav h1 {
+    margin: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+nav li:first-child {
+margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+nav ul li:hover {
+    background-color: #808080;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: wheat;
+    border-radius: 20px;
+    margin: 10px 0;
+    align-items: center;
+    transition: all ease 0.5s;
+    padding: 15px;
+    animation: scaleUp 1s ease-in forwards;
+}
+
+.projects:hover {
+    transform: scale(1.05);
+    background-color: #afa35d;
+    cursor: pointer;
+}
+.projects {
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    animation: scaleUp 1s ease-in forwards;
+}
+
+.projects:hover {
+    animation: scaleUpH 0.5s ease-in forwards;
+    background-color: burlywood;
+    cursor: pointer;
+    
+}
+
+@keyframes scaleUpH {
+    to {
+        transform: scale(1.1);
+    }
+}
+.imgdiv {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.projects img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rest {
+    flex: 1;
+    overflow: hidden;
+}
+
+.rest h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: black;
+}
+
+.rest h4 {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: normal;
+    color: black;
+}
+.menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text h3{
+        font-size: 0.6em;
+    }
+    .text h1{
+        font-size: 1.2em;
+    }
+    .hideonmobile{
+        display: none;
+    }
+
+    .projects {
+        flex-direction: row;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .imgdiv {
+        margin-right: 10px;
+    }
+
+    .projects img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .rest h1 {
+        font-size: 1em;
+    }
+
+    .rest h4 {
+        font-size: 0.8em;
+    }
+    .menu {
+        display: block
+    }
+}
+@keyframes scaleUp {
+    0%{
+        transform:scale(0.92);
+    }
+    100% {
+        transform: scale(1); 
+    }
+}

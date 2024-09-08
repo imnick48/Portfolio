@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="../../assets/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Portfolio</h1>
+        <ul>
+            <li class="hideonmobile">
+                <a href="/index.html">Home</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/About Section/">About</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+            <li onclick=showsidebar() class="menu">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+        <ul class="sidebar">
+            <li></li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/Pages/About Section/about.html">About</a>
+            </li>
+            <li>
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li>
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li>
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content" onclick=unshowsidebar()>
+        <div class="aboutme">
+            <h1>Who am I?</h1>
+            <p>
+                I am Sagnick Das, currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Data Science at MCKV Institute of Engineering. With a CGPA of 8.23, I have a solid academic foundation that complements my hands-on experience in full-stack web development.
+
+My passion lies in exploring the realms of data science, machine learning, and neural networks, where I strive to leverage my skills to solve complex problems and create innovative solutions. I am dedicated to continuous learning and am always excited to take on new challenges that push the boundaries of my knowledge and capabilities.
+            </p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

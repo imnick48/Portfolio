@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Portfolio</h1>
+        <ul>
+            <li class="hideonmobile">
+                <a href="/index.html">Home</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/About Section/">About</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+            <li onclick=showsidebar() class="menu">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+        <ul class="sidebar">
+            <li></li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/Pages/About Section/about.html">About</a>
+            </li>
+            <li>
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li>
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li>
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content" onclick=unshowsidebar()>
+        <div class="text">
+            <h3>Hello</h3>
+            <h1>I'm Sagnick</h1>
+            <h1>Das</h1>
+        </div>
+        <div class="imagediv">
+            <img src="assets/images/me2.png" alt="Sorry! Image not found">
+        </div>
+    </div>
+    <script>
+        function showsidebar(){
+            const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='flex';
+        }
+        function unshowsidebar(){
+            const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='none';
+        }
+    </script>
+</body>
+</html>

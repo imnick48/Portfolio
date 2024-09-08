@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="icon" href="../../assets/images/logo.png" type="image/icon type">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Portfolio</h1>
+        <ul>
+            <li class="hideonmobile">
+                <a href="/">Home</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/About Section/about.html">About</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li class="hideonmobile">
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+            <li onclick=showsidebar() class="menu">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+        <ul class="sidebar">
+            <li></li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/Pages/About Section/about.html">About</a>
+            </li>
+            <li>
+                <a href="/Pages/Resume Section/resume.html">Reseme</a>
+            </li>
+            <li>
+                <a href="/Pages/Skills Section/skills.html">Skills</a>
+            </li>
+            <li>
+                <a href="/Pages/Projects Section/projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="/Pages/Contact Section/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+   <div class="content" onclick=unshowsidebar()>
+       <h1 style="animation: scaleUp 1s ease-in forwards;">My Skills</h1>
+       <div class="skillscomponent">
+           <div class="skillssubcomponent">
+               <h2 style="margin: 20px;">Programming Languages</h2>
+               <h3 style="margin: 0px;">C/C++</h3>
+               <div class="container">
+                   <div class="skills ccpp">90%</div>
+               </div>
+               <h3 style="margin: 0px;">JAVA</h3>
+               <div class="container">
+                   <div class="skills JAVA">60%</div>
+               </div>
+               <h3 style="margin: 0px;">Python</h3>
+               <div class="container">
+                   <div class="skills Python">75%</div>
+               </div>
+               <h3 style="margin: 0px;">Rust</h3>
+               <div class="container">
+                   <div class="skills Rust">50%</div>
+               </div>
+           </div>
+           <div class="skillssubcomponent">
+               <h2 style="margin: 20px;">Front-End Technologies</h2>
+               <h3 style="margin: 0px;">HTML</h3>
+               <div class="container">
+                   <div class="skills html">90%</div>
+               </div>
+               <h3 style="margin: 0px;">CSS</h3>
+               <div class="container">
+                   <div class="skills CSS">90%</div>
+               </div>
+               <h3 style="margin: 0px;">Javascript</h3>
+               <div class="container">
+                   <div class="skills Javascript">80%</div>
+               </div>
+               <h3 style="margin: 0px;">React.JS</h3>
+               <div class="container">
+                   <div class="skills React">70%</div>
+               </div>
+               <h3 style="margin: 0px;">Svelte.JS</h3>
+               <div class="container">
+                   <div class="skills Svelte">60%</div>
+               </div>
+           </div>
+           <div class="skillssubcomponent">
+               <h2 style="margin: 20px;">Back-End Technologies</h2>
+               <h3 style="margin: 0px;">Node.JS</h3>
+               <div class="container">
+                   <div class="skills Node">80%</div>
+               </div>
+               <h3 style="margin: 0px;">Express.JS</h3>
+               <div class="container">
+                   <div class="skills Express">85%</div>
+               </div>
+               <h3 style="margin: 0px;">Django</h3>
+               <div class="container">
+                   <div class="skills Django">70%</div>
+               </div>
+               <h3 style="margin: 0px;">FastAPI</h3>
+               <div class="container">
+                   <div class="skills FastAPI">60%</div>
+               </div>
+           </div>
+           <div class="skillssubcomponent">
+               <h2 style="margin: 20px;">Machine Learning</h2>
+               <h3 style="margin: 0px;">Machine Learning</h3>
+               <div class="container">
+                   <div class="skills ML">60%</div>
+               </div>
+               <h3 style="margin: 0px;">Data Analysis</h3>
+               <div class="container">
+                   <div class="skills DA">75%</div>
+               </div>
+               <h3 style="margin: 0px;">OpenCV</h3>
+               <div class="container">
+                   <div class="skills OC">65%</div>
+               </div>
+               <h3 style="margin: 0px;">TensorFlow</h3>
+               <div class="container">
+                   <div class="skills TF">58%</div>
+               </div>
+               <h3 style="margin: 0px;">Pytorch</h3>
+               <div class="container">
+                   <div class="skills Pth">55%</div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
