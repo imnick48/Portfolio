@@ -11,6 +11,10 @@ const movie_sentiment=document.getElementById('Movie_Sentiment')
 movie_sentiment.addEventListener("click",()=>{
     window.location.href=('https://github.com/imnick48/Movie_sentiment_analysis')
 })
+const anthem=document.getElementById('similar_anthem')
+anthem.addEventListener("click",()=>{
+    window.location.href=("https://github.com/imnick48/Similar_anthem");
+})
 function showsidebar(){
     const sidebar=document.querySelector('.sidebar');
     sidebar.style.display='flex';

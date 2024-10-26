@@ -89,7 +89,8 @@ nav ul li a {
 .projects {
     width: 50%;
     max-width: 800px;
-    background-color: wheat;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     border-radius: 20px;
     margin: 20px 0;
     display: flex;
@@ -99,11 +100,12 @@ nav ul li a {
     overflow: hidden;
     transition: transform 0.5s ease, background-color 0.5s ease;
     animation: scaleUp 1s ease-in forwards;
+    color: black;
+    font-size: 0.9rem;
 }
 
 .projects:hover {
     animation: scaleUpH 0.5s ease-in forwards;
-    background-color: burlywood;
     cursor: pointer;
     
 }
@@ -138,7 +140,12 @@ nav ul li a {
 .menu {
     display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px){
+    .projects{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 832px) {
     nav {
         flex-direction: row;
         justify-content: space-between;
@@ -156,11 +163,14 @@ nav ul li a {
     .projects {
         flex-direction: column;
         text-align: center;
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px;
+        font-size: 0.9rem;
     }
 
     .projects img {
-        margin: 10px 0; /* Adjust margins */
+        height: 40px;
+        width: 40px;
+        margin: 5px 0;
     }
 
     .rest h1 {
@@ -181,4 +191,20 @@ nav ul li a {
     100% {
         transform: scale(1); 
     }
+}
+
+@media (max-width: 540px) {
+    .projects {
+        font-size: 0.7rem;
+    }
+
+    .projects img {
+        height: 30px;
+        width: 30px;
+        margin: 5px 0;
+    }
+    .tohide{
+        display: none;
+    }
+
 }
