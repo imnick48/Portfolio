@@ -15,6 +15,14 @@ const anthem=document.getElementById('similar_anthem')
 anthem.addEventListener("click",()=>{
     window.location.href=("https://github.com/imnick48/Similar_anthem");
 })
+const recomendation=document.getElementById('Recomendation')
+recomendation.addEventListener("click",()=>{
+    window.location.href=("https://github.com/imnick48/Recomender_System");
+})
+const twt_class=document.getElementById('Twitter_class')
+twt_class.addEventListener("click",()=>{
+    window.location.href=("https://github.com/imnick48/Twitter_Comments_Classification");
+})
 function showsidebar(){
     const sidebar=document.querySelector('.sidebar');
     sidebar.style.display='flex';
