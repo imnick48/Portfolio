@@ -23,6 +23,11 @@ const twt_class=document.getElementById('Twitter_class')
 twt_class.addEventListener("click",()=>{
     window.location.href=("https://github.com/imnick48/Twitter_Comments_Classification");
 })
+
+const plant=document.getElementById('Plant_Recognizer')
+plant.addEventListener("click",()=>{
+    window.location.href=("https://github.com/imnick48/PLANT_DESEASE_RECOGNIZER")
+})
 function showsidebar(){
     const sidebar=document.querySelector('.sidebar');
     sidebar.style.display='flex';
